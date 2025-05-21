@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Quiz</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <h1>The best quiz on the Internet</h1>
+        <div id="container">
+            <form id="Pop-Quiz">
+                <p id="ques1">What is the capital of Sweden?</p>
+                <label><input required id="ans1" name="SwedCap" type="textbox"></label>
+                
+                <p>What is the capital of Lebanon?</p>
+                <div>
+                    <label class="options"><input required id="q2op1" name="LebCap" type="radio" value="Beirut">Beirut</label>
+                </div>
+                <div>
+                    <label class="options"><input id="q2op2" name="LebCap" type="radio" value="Tripoli">Tripoli</label>
+                </div>
+
+                <p>What is the capital of USA?</p>
+                <div>
+                    <label class="options"><input required id="q3op1" name="USACap" type="radio" value="Washington D.C">Washington D.C</label>
+                </div>
+                <div>
+                    <label class="options"><input id="q3op2" name="USACap" type="radio" value="New York">New York</label>
+                </div>
+
+                <div>
+                    <input id="done-btn" type="submit" value="Done">
+                </div>
+            </form>
+            <div id="feedbackContainer">
+                <div id="feedback">
+                    <p id="text"></p>
+                    <img src="" alt="picture">
+                </div>
+            </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>

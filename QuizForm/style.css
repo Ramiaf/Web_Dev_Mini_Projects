@@ -1,0 +1,96 @@
+#container {
+    display: flex;
+   
+}
+
+@media (max-width: 770px) {
+    #container {
+        flex-direction: column;
+    }
+}
+
+form {
+    background-color: lightblue;
+    width: 400px;
+    height: 400px;
+    padding: 25px;
+    padding-top: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+
+#ans1 {
+    border: none;
+    border-radius: 5px;
+    height: 25px;
+    width: 200px;
+}
+
+.options {
+    line-height: 35px;
+    position: relative;
+    bottom: 10px;
+}
+
+#done-btn {
+    position: relative;
+    top: 5px;
+    background-color: green;
+    color: white;
+    width: 120px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    font-size: 18px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#done-btn:hover {
+    cursor: pointer;
+    background-color: white;
+    color: green;
+}
+
+#done-btn:active {
+    transform: scale(0.95);
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.3);
+
+}
+
+#feedbackContainer {
+    background-color: rgb(226, 26, 53, 0.9);
+    width: 400px;
+    height: 400px;
+    position: relative;
+    top: 15px;
+    left: 20px;
+    border-radius: 10px;
+    display: none;
+}
+
+#feedback {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#text {
+    white-space: pre-line;
+    /* used to make \n act as a new line character */
+    line-height: 50px;
+    font-size: 30px;
+    position: relative;
+    bottom: 20px;
+    left: 20px;
+    text-align: left;
+    width: 100%;
+}
+
+img {
+    width: 350px;
+    height: 230px;
+    position: relative;
+    bottom: 20px;
+}
