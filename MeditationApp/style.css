@@ -1,0 +1,121 @@
+body, html {
+    margin: 0;
+    height: 100%;
+    background-repeat: none;
+    background-size: cover;
+    display: flex;
+}
+
+#time-intervals-container {
+    /* border: 1px solid black; */
+    width: 450px;
+    height: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.time-intervals {
+    width: 130px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 10px;
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+#start-container {
+    /* border: 1px solid red; */
+    height: 98%;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    position: relative;
+    bottom: 50px;
+}
+
+#start-circle {
+    width: 250px;
+    height: 250px;
+    border: 8px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    position: relative;
+    top: 100px;
+    border-radius: 50%;
+    overflow: visible;
+}
+
+svg {
+    transform: rotate(-90deg);
+}
+#c1 {
+    fill:none;
+    stroke: rgb(26, 145, 224);
+    stroke-width: 8;
+    stroke-dasharray: 810.66;  /* how much of circumference should be covered with stroke (2*pi*r for entire circle) */
+    stroke-dashoffset: 810.66; /*how much of the stroke is hidden */
+    transition: stroke-dashoffset 0.1s linear;
+}
+
+#start-pause-btn {
+    cursor: pointer;
+    padding: 0;
+    position: relative;
+    bottom: 100px;
+    left: 10px;
+}
+
+#reset-btn {
+    position: relative;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+#time {
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    position: relative;
+    font-family: sans-serif;
+}
+
+#weather-container {
+    /* border: 3px solid green; */
+    width: 405px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+.icons {
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    border: none;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 65px 65px;
+    cursor: pointer;
+}
+
+#rain-pic {
+    background-image: url("svg/rain-icon.svg");
+    background-color: rgb(45, 105, 233, 0.8);
+}
+
+#sun-pic {
+    background-image: url("svg/sun-icon.svg");
+    background-color: rgb(192, 29, 29, 0.7);
+}

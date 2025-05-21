@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <!-- <link rel="icon" href="/favicon.svg" type="image/svg+xml"> -->
+    </head>
+
+    <body>
+        <div id="time-intervals-container">
+            <button class="time-intervals" id="2min" type="button">2 minutes</button>
+            <button class="time-intervals" id="5min" type="button">5 minutes</button>
+            <button class="time-intervals" id="10min" type="button">10 minutes</button>
+        </div>
+
+        <div id="start-container">
+            <svg id="start-circle">
+                <circle id="c1" r="129" cx="125" cy="125">
+            </svg>
+            <img id="start-pause-btn" src="svg/play.svg">
+            
+            <div id="reset-container">
+                <img id="reset-btn" src="svg/replay.svg">
+            </div>
+            <div id="time-container">
+                <div id="time"><span id="min">00</span>:<span id="sec">10</span></div>
+            </div>
+        </div>
+
+        <div id="weather-container">
+            <div class="icons" id="rain-pic"></div>
+            <div class="icons" id="sun-pic"></div>
+        </div>
+        <video muted loop style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1;">
+            <source id="vid_source" src="video/rain.mp4" type="video/mp4"/>
+        </video>
+
+        <script src="script.js"></script>
+    </body>
+
+</html>
