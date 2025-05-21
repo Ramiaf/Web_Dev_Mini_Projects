@@ -1,0 +1,91 @@
+body, html {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(238, 226, 200);
+}
+
+#container {
+    padding:0;
+    margin:0;
+    width: 350px;
+    height: 400px;
+    box-shadow: 0px 0px 25px black;
+    border-radius: 10px;
+    background-color: indigo;
+    border-color: rgb(238, 226, 200);
+    
+}
+
+#output {
+    background-color: indigo;
+    height: 50px;
+    width: 100%;
+    color: rgb(238, 226, 200);
+    position: relative;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    
+
+}
+
+#operation {
+    position: absolute;
+    top: 3px;
+    right: 2px;
+    font-size: 15px;
+}
+
+#text {
+    position: absolute;
+    bottom: 2px;
+    right: 0;
+    font-size: 22px;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid indigo;
+    background-color: turquoise;
+    font-size: 18px;
+    height: 70px;
+    cursor: pointer;
+    border-radius: 3px;
+    width:100%;
+
+}
+
+button:hover {
+    transition: all 0.3s ease;
+    background-color: rgb(238, 226, 200);
+}
+
+
+#row1, #lastrow {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    border-radius: 10px;
+}
+
+#rows2-3-4{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+#AC, #eq {
+    width: 175px;
+}
+
+#AC {
+    border-top-left-radius: 0px;
+}
+
+#div {
+    border-top-right-radius: 0px;
+}
